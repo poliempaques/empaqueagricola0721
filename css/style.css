@@ -9,29 +9,29 @@ background-attachment: fixed;
 
 .imagen{
 
-    width: 200px;
-    margin-top: 50px;
+    width: 300px;
+    margin-top: 20px;
     margin-left: 50px;
 }
 .img{
 width: 300px;
 height: 300px;
-margin-left: 700px;
+margin-left: 959px;
 margin-top: 10px;
 
 }
 .contenedor{
 
 display: flex;
-justify-content: right;
-
+justify-content: left;
+margin-left: 100px;
 
 }
 .imagen2{
 
-    width: 1285px;
+    width: 1250px;
     height: 500px;
-    margin-inline-start: 55px;
+    margin-inline-start: 10px;
 }
 
 .b{
@@ -39,35 +39,36 @@ justify-content: right;
 
     width: 120px;
     height: 90px;
-    margin-left: 60px;
+    margin-left: 10px;
 
 
 } 
 .colombia{
 
 display: flex;
-justify-content: center;
-
+justify-content: left;
+margin-left: 90px;
 
 } 
 
 .imagen4{
 
-width: 300px;
-margin-left: 500px;
+width: 400px;
+margin-left: 50px;
 
 
 }
 .letra{
-margin-left: 70px;
+margin-left: 1px;
+margin-top: 200px;
 
 }
 .imagen5{
 
-width: 1275px;
+width: 1250px;
 height: 300px;
 margin-top: 20px;
-margin-left: 55px;
+margin-left: 1px;
 
 }
 .parrafo2{
@@ -101,4 +102,41 @@ margin-left: 150px;
 margin-left: 150px;
 
 
+}
+.container{
+margin: auto;
+padding: 25px 30px;
+}
+header .container{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-left: 350px;
+
+}
+header nav{
+display: flex;
+padding-bottom: 15px;
+}
+header a{
+padding: 10px 2px;
+
+color: black;
+text-decoration: none;
+font-size: 25px;
+font-weight: bold;
+margin: 15px;
+}
+header a:hover{
+
+color: rgb(158,153,61)
+
+
+
+}
+#hero{
+
+background-image: url(../img/seccion.png);
+background-repeat: no-repeat;
+background-size: cover;
 }
