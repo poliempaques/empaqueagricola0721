@@ -11,12 +11,11 @@
 padding: 0;
 margin: 0;
 text-decoration: none;
-list-style: none;
 box-sizing: border-box;
 }
 nav{
 
-background: rgb(43, 247, 43);
+background: rgb(20, 146, 230);
 height: 80px;
 width: 100%;
 }
@@ -44,14 +43,14 @@ margin: 0 5px;
 }
 nav ul li a{
 
-color: black;
+color: rgb(238, 233, 233);
 font-size: 18px;
 padding: 1px 2px;
 border-radius: 3px;
 text-transform: uppercase;
 }
 li a.active, li a:hover{
-color: rgb(25, 10, 236);
+color: rgb(31, 255, 68);
 
 
 }
@@ -89,8 +88,8 @@ display: block;
 ul{
 position: fixed;
 width: 100%;
-height: 100vh;
-background: rgb(67, 255, 67);
+height: 90vh;
+background: rgb(53, 48, 48);
 top: 80px;
 left: 100%;
 text-align: center;
@@ -110,26 +109,95 @@ li a:hover, li a.active{
 
 
     background: none;
-    color: black;
+    color: rgb(83, 241, 68);
 }
 #check:checked ~ ul{
 
     left: 0;
+    position: absolute;
 }
+}
+
+
+.catty{
+margin-left: 50px;
+text-align: center;
+font-size: clamp(1rem, 5vw)
+
+}
+.a{
+    font-size: 20px;
+
+
+}
+.bratty{
+margin-left: 50px;
+text-align: center;
+font-size: clamp(1rem, 5vw)
+
+}
+.mettatton{
+text-align: center
+}
+.cal-agricola{
+
+
+width: 40vw;
+height: 20vw;
+
+margin-top: 17px;
 }
 .paquete{
-width: 300px;
-height: 300px;
-margin-left: 490px;
+
+
+width: 40vw;
+height: 20vw;
+
 margin-top: 17px;
 }
 .plantica{
-margin-left: 110px;
-margin-top: 50px;
+
+margin-left: 20px;
+margin-top: 20px;}
+.toriel{
+    
+    text-align: left;
+    font-size: 3rem;
+    padding: 4px;
+}
+@media screen and (max-width:700px){
+
+.toriel{font-size: 20px;}
+
+}
+.asgore{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+
+.asgore{font-size: 20px;}
+
+}
+.asriel{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.asriel{font-size: 20px;}
+
+}
+.kris{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.kris{font-size: 17px;}
+
 }
 </style>
 </head>
-<body background="img/mata.png" style="background-repeat: no-repeat; background-size: cover; background-attachment: scroll;">
+<body background="img/mata.png" style="background-size: cover;background-repeat: no-repeat; background-attachment: scroll;background-position-y: 10vh;">
     <header>
         <nav>
         <div class="logo">
@@ -154,20 +222,20 @@ margin-top: 50px;
         </nav>
     </header>
     <section>
-            <div class="container">
-                <h1 style="font-style: italic; font-size: 40px; text-align: left; margin-top: 230px; margin-left: 390px;"><strong>PRODUCTOS BIÓLOGICOS</strong></h1>
-                <h1 style="font-style: italic; font-size: 30px; text-align: left; margin-top: 50px; margin-left: 490px;"><strong></strong>ABONO COMPOSTADO</h1>   
+            <div class="a">
+                <h1 class="catty" style="font-style: italic; margin-top: 90px;"><strong>PRODUCTOS BIÓLOGICOS</strong></h1>
+                <h1 class="bratty" style="font-style: italic; margin-top: 10px"><strong>ABONO COMPOSTADO</strong></h1>   
             </div>
-            <div class="container">
+            <div class="mettatton">
                 <img src="img/paquete.png" class="paquete" alt="">
             </div>
 <div class="plantica">
-    <li style="font-style: italic; font-size: 40px; text-align: left;">Elaborado 100% a base de materia orgánica biodegradable.</li>
-    <li style="font-style: italic; font-size: 40px; text-align: left;">Asegura la formación de agregados que permiten un mayor retención de agua, intercambio de gases y nutrientes.</li>
-    <li style="font-style: italic; font-size: 40px; text-align: left;">Aumenta la capacidad del suelo para absorver los distintos elementos nutritivos de otras fuentes.</li>
-    <p style="font-style: italic; font-size: 40px; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3102575373</p>
-    <p style="font-style: italic; font-size: 40px; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3003259541</p>
-    <a href="mailto:jaimeospinaq@hotmail.com?subject=" style="color: rgb(16, 16, 233); text-decoration: none; font-size: 40px; margin-left: 2px;">correo electronico:jaimeospinaq@hotmail.com clic aqui</a>
+    <li h1 class="toriel" style="font-style: italic;">Elaborado 100% a base de materia orgánica biodegradable.</h1></li>
+    <li h1 class="asgore" style="font-style: italic; text-align: left;">Asegura la formación de agregados que permiten un mayor retención de agua, intercambio de gases y nutrientes.</h1></li>
+    <li h1 class="asgore" style="font-style: italic; text-align: left;">Aumenta la capacidad del suelo para absorver los distintos elementos nutritivos de otras fuentes.</h1></li>
+    <p class="asriel" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3102575373</p>
+    <p class="asriel" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3003259541</p>
+    <a class="kris" href="mailto:jaimeospinaq@hotmail.com?subject=" style="color: rgb(16, 16, 233); text-decoration: none; margin-left: 2px;">correo electronico:jaimeospinaq@hotmail.com clic aqui</a>
 
 
 </div>

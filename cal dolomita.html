@@ -5,85 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal dolomita</title>
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 .cal-agricola{
 
 
-width: 500px;
-height: 400px;
-margin-left: 390px;
-margin-top: 17px;
+width: 40vw;
+height: 20vw;
 
+margin-top: 17px;
+}
+.imagen{
+text-align: center
+}
+
+.texto8{
+margin-left: 50px;
+text-align: center;
+font-size: clamp(1rem, 5vw)
+
+}
+
+
+
+
+
+.texto9{
+margin-left: 50px;
+    text-align: center;
+    font-size: clamp(1rem, 5vw)
+}
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+}
+nav{
+
+background: rgb(20, 146, 230);
+height: 80px;
+width: 100%;
+}
+.enlace{
+position: absolute;
+padding: 5px 50px;
+
+}
+.logo{
+
+height: 10px;
+
+}
+nav ul{
+
+float: right;
+margin-right: 20px;
+
+}
+nav ul li{
+
+display: inline-block;
+line-height: 50px;
+margin: 0 5px;
+}
+nav ul li a{
+
+color: rgb(238, 233, 233);
+font-size: 18px;
+padding: 1px 2px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+li a.active, li a:hover{
+color: rgb(31, 255, 68);
+
+
+}
+.checkbtn{
+
+font-size: 30px;
+float: right;
+line-height: 50px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+
+display: none;
+
+
+}
+@media (max-width: 952px){
+
+.enlace{
+padding-left: 20px;
+
+}
+nav ul li a{
+font-size: 16px;
+
+}
+}
+@media (max-width: 858px){
+.checkbtn{
+display: block;
+
+}
+ul{
+position: fixed;
+width: 100%;
+height: 90vh;
+background: rgb(53, 48, 48);
+top: 80px;
+left: 100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+
+font-size: 20px;
+
+}
+li a:hover, li a.active{
+
+
+    background: none;
+    color: rgb(83, 241, 68);
+}
+#check:checked ~ ul{
+
+    left: 0;
+    position: absolute;
+}
 }
 .agricola{
 
-margin-left: 110px;
-margin-top: 50px;
+    margin-left: 20px;
+margin-top: 20px;}
 
+.personaje{
+    
+    text-align: left;
+    font-size: 3rem;
+    padding: 4px;
+}
+@media screen and (max-width:700px){
 
+.personaje{font-size: 20px;}
 
 }
-.container{
-margin: auto;
-padding: 25px 30px;
+.frisk{
+font-size: 3rem;
+padding: 4px;
 }
-header .container{
-display: flex;
-align-items: center;
-flex-direction: column;
-margin-left: 350px;
+@media screen and (max-width:700px){
+
+.frisk{font-size: 20px;}
 
 }
-header nav{
-display: flex;
-padding-bottom: 15px;
+.sans{
+font-size: 3rem;
+padding: 4px;
 }
-header a{
-padding: 10px 2px;
+@media screen and (max-width:700px){
 
-color: black;
-text-decoration: none;
-font-size: 25px;
-font-weight: bold;
-margin: 15px;
+.sans{font-size: 20px;}
+
 }
-header a:hover{
-    color: rgb(158,153,61)}
+.papyrus{
+font-size: 3rem;
 
+}
+@media screen and (max-width:700px){
+.papyrus{font-size: 20px;}
 
+}
+.undyne{
+font-size: 3rem;
 
+}
+@media screen and (max-width:700px){
+.undyne{font-size: 20px;
+}
 
+}
+.alphys{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.alphys{font-size: 17px;}
+
+}
 
     </style>
 </head>
-<body background="img/cal-agricola.png" style="background-repeat: no-repeat; background-size: cover; background-attachment: scroll;">
+<body background="img/cal-agricola.png" style="background-size: cover;background-repeat: no-repeat; background-attachment: scroll;background-position-y: 10vh;" >
     <header>
-      
-        <div class="container">
-            <nav>
-            <a href="index.html">Quienes Somos</a>
-            <a href="portafolio de productos.html">Portafolio de productos</a>
-            <a href="#">tienda</a>
-            <a href="contacto.html">contacto</a>
-            <a href="nuestros clientes/nuestros clientes.html">nuestros clientes</a>
-       
+        <nav>
+        <div class="logo">
+            
+            <h2 class="compañia"></h2>
+        </div>
+            
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+               </label>
+               <a href="" class="enlace">
+                <img src="img/logo.png" alt="">
+               </a>
+               <ul>
+               <li><a href="index.html">Quienes Somos</a></li>
+            <li><a href="portafolio de productos.html">Portafolio de productos</a></li>
+           <li><a href="#">tienda</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+            <li><a href="nuestros clientes/nuestros clientes.html">nuestros clientes</a></li>
+        </ul>
         </nav>
-    </div>
-
     </header>
-    <div>
-        <h1 style="font-style: italic; font-size: 40px; text-align: left; margin-top: 230px; margin-left: 390px;"><strong>ENMIENDAS AGRÍCOLAS</strong></h1>
-        <h1 style="font-style: italic; font-size: 30px; text-align: left; margin-top: 50px; margin-left: 500px;"><strong>CAL DOLOMITA</strong></h1>
+    
+    <div class="aventura">
+        <h1 class="texto8" style="font-style: italic;margin-top: 90px;"><strong>ENMIENDAS AGRÍCOLAS</strong></h1>
+        <h1 class="texto9" style="font-style: italic;margin-top: 10px;"><strong>CAL DOLOMITA</strong></h1>
     </div>
-    <div><img src="img/imagen-cal.png" class="cal-agricola" alt="">
+    <div class="imagen"><img src="img/imagen-cal.png" class="cal-agricola" alt="">
     </div>
 <div class="agricola">
-    <li style="font-style: italic; font-size: 40px; text-align: left;">La cal dolomita es una enmienda para corregir la acidez del suelo.</li>
-    <li style="font-style: italic; font-size: 40px; text-align: left;">Se utiliza como enmendador o fertilizante para mejorar las características de los suelos: porosidad y actividad biológica del suelo.</li>
-    <li style="font-style: italic; font-size: 40px; text-align: left;">Es muy relevante su efecto en la liberación del Fosfóro fijado en los suelos ácidos.</li>
-    <p style="font-style: italic; font-size: 40px; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3102575373</p>
-    <p style="font-style: italic; font-size: 40px; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3003259541</p>
-    <a href="mailto:jaimeospinaq@hotmail.com?subject=" style="color: rgb(16, 16, 233); text-decoration: none; font-size: 40px; margin-left: 2px;">correo electronico:jaimeospinaq@hotmail.com clic aqui</a>
+    
+    <li h1 class="personaje"  style="font-style: italic;">La cal dolomita es una enmienda para corregir la acidez del suelo</h1></li>
+    <li h1 class="frisk" style="font-style: italic; text-align: left;">Se utiliza como enmendador o fertilizante para mejorar las características de los suelos: porosidad y actividad biológica del  suelo</h1></li>
+    <li h1 class="sans" style="font-style: italic; text-align: left;">Es muy relevante su efecto en la liberación del Fosfóro fijado en los suelos ácidos.</h1></li>
+
+    <p class="papyrus" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3102575373</p>
+    <p class="undyne" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3003259541</p>
+    <a class="alphys" href="mailto:jaimeospinaq@hotmail.com?subject=" style="color: rgb(16, 16, 233); text-decoration: none; margin-left: 2px;">correo electronico:jaimeospinaq@hotmail.com clic aqui</a>
 
 
 

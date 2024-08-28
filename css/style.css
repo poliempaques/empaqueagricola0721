@@ -46,36 +46,39 @@ box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
 
     width: 120px;
     height: 90px;
-    margin-left: 10px;
+    margin-left: 70px;
 
 
 } 
 .colombia{
-
-display: flex;
-justify-content: left;
-margin-left: 90px;
+margin-left: 50px;
+font-size: 2rem;
 
 } 
 
 .imagen4{
 
-width: 400px;
-margin-left: 50px;
-
-
+width:80vw;
+height: 30vw;
+margin-right: 10px;
+border: dashed 3px rgb(101, 255, 54);
+border-radius: 15px;
 }
 .letra{
-margin-left: 1px;
-margin-top: 200px;
 
+margin-top: 10px;
+font-size: 2rem;
 }
+
+
 .imagen5{
 
-width: 1250px;
-height: 300px;
-margin-top: 20px;
-margin-left: 1px;
+width: 70vw;
+height: 30vw;
+margin-top: 1px;
+margin-left: 81px;
+border: dashed 3px rgb(82, 252, 82);
+border-radius: 15px;
 
 }
 .parrafo2{
@@ -86,14 +89,14 @@ margin-left: 60px;
 }
 .texto6{
 
-margin-right: 15px;
-
+margin-left: 30px;
+font-size: 2rem;
 
 }
 .texto7{
 
-margin-left: 15px;
-
+margin-left: 30px;
+font-size: 2rem;
 
 }
 .llano{
@@ -119,7 +122,7 @@ box-sizing: border-box;
 }
 nav{
 
-background: rgb(43, 247, 43);
+background: rgb(20, 146, 230);
 height: 80px;
 width: 100%;
 }
@@ -147,14 +150,14 @@ margin: 0 5px;
 }
 nav ul li a{
 
-color: black;
+color: rgb(238, 233, 233);
 font-size: 18px;
 padding: 1px 2px;
 border-radius: 3px;
 text-transform: uppercase;
 }
 li a.active, li a:hover{
-color: rgb(25, 10, 236);
+color: rgb(31, 255, 68);
 
 
 }
@@ -192,8 +195,8 @@ display: block;
 ul{
 position: fixed;
 width: 100%;
-height: 100vh;
-background: rgb(67, 255, 67);
+height: 90vh;
+background: rgb(53, 48, 48);
 top: 80px;
 left: 100%;
 text-align: center;
@@ -213,11 +216,12 @@ li a:hover, li a.active{
 
 
     background: none;
-    color: black;
+    color: rgb(83, 241, 68);
 }
 #check:checked ~ ul{
 
     left: 0;
+    position: absolute;
 }
 }
 section h1{
@@ -234,4 +238,45 @@ flex-direction: column;
 padding: 30px 20px;
 
 }
+}
+.pais{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    margin: 15px auto;
+}
+@media (max-width:700px){
+.pais{
+flex-direction: column;
+
+}
+
+
+}
+@media screen and (max-width:700px){
+
+.colombia{font-size: 20px;}
+.letra{font-size: 20px;}
+
+}
+#hero{background: url(../img/seccion.png);
+background-size: cover;
+background-position: left left;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+@media screen and (max-width:700px){
+
+.texto6{font-size: 20px;}
+.texto7{font-size: 20px;}
+}
+@media (max-width:700px){
+.parrafo2{
+flex-direction: column;
+
+
+}
+
+
 }
