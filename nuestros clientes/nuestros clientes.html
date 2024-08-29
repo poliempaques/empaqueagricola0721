@@ -5,59 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nuestros clientes</title>
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-.container{
-margin: auto;
-padding: 25px 30px;
-}
-header .container{
-display: flex;
-align-items: center;
-flex-direction: column;
-margin-left: 350px;
-
-}
-header nav{
-display: flex;
-padding-bottom: 15px;
-}
-header a{
-padding: 10px 2px;
-
-color: black;
+*{
+padding: 0;
+margin: 0;
 text-decoration: none;
-font-size: 25px;
-font-weight: bold;
-margin: 15px;
+box-sizing: border-box;
 }
-header a:hover{
+nav{
 
-color: rgb(158,153,61)}
+background: rgb(20, 146, 230);
+height: 80px;
+width: 100%;
+}
+.enlace{
+position: absolute;
+padding: 5px 50px;
+
+}
+.logo{
+
+height: 10px;
+
+}
+nav ul{
+
+float: right;
+margin-right: 20px;
+
+}
+nav ul li{
+
+display: inline-block;
+line-height: 50px;
+margin: 0 5px;
+}
+nav ul li a{
+
+color: rgb(238, 233, 233);
+font-size: 18px;
+padding: 1px 2px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+li a.active, li a:hover{
+color: rgb(31, 255, 68);
 
 
+}
+.checkbtn{
 
-    </style>
+font-size: 30px;
+float: right;
+line-height: 50px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+
+display: none;
+
+
+}
+@media (max-width: 952px){
+
+.enlace{
+padding-left: 20px;
+
+}
+nav ul li a{
+font-size: 16px;
+
+}
+}
+@media (max-width: 858px){
+.checkbtn{
+display: block;
+
+}
+ul{
+position: fixed;
+width: 100%;
+height: 90vh;
+background: rgb(53, 48, 48);
+top: 80px;
+left: 100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+
+font-size: 20px;
+
+}
+li a:hover, li a.active{
+
+
+    background: none;
+    color: rgb(83, 241, 68);
+}
+#check:checked ~ ul{
+
+    left: 0;
+    position: absolute;
+}
+}
+
+.ash{
+    font-size: 20px;
+
+
+}
+.misty{
+margin-left: 50px;
+text-align: center;
+font-size: clamp(1rem, 5vw)
+
+}
+.max{
+    font-size: 3rem;
+padding: 4px;
+margin-left: 50px;
+margin-top: 50px;
+}
+.brock{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.brock{font-size: 20px;}
+
+}
+.may{
+width: 50vw;
+
+
+}
+.dawn{
+
+width: 95vw;
+height: 100%;
+
+}
+ </style>
 </head>
-<body background="../img/clientes.png" style="background-repeat: no-repeat; background-size: cover; background-attachment: scroll;">
+<body background="../img/clientes.png" style="background-size: cover;background-repeat: no-repeat; background-attachment: scroll;background-position-y: 10vh;">
     <header>
-      
-        <div class="container">
-            <nav>
-            <a href="../index.html">Quienes Somos</a>
-            <a href="../portafolio de productos.html">Portafolio de productos</a>
-            <a href="#">tienda</a>
-            <a href="../contacto.html">contacto</a>
-            <a href="../nuestros clientes/nuestros clientes.html">nuestros clientes</a>
-       
+        <nav>
+        <div class="logo">
+            
+            <h2 class="compañia"></h2>
+        </div>
+            
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+               </label>
+               <a href="" class="enlace">
+                <img src="img/logo.png" alt="">
+               </a>
+               <ul>
+               <li><a href="../index.html">Quienes Somos</a></li>
+            <li><a href="../portafolio de productos.html">Portafolio de productos</a></li>
+           <li><a href="#">tienda</a></li>
+            <li><a href="../contacto.html">contacto</a></li>
+            <li><a href="../nuestros clientes/nuestros clientes.html">nuestros clientes</a></li>
+        </ul>
         </nav>
-    </div>
-
     </header>
     <div>
-        <div><h1 style="font-style: italic; font-size: 40px; text-align: left; margin-top: 230px; margin-left: 390px;"><strong>NUESTROS CLIENTES</strong></h1>
-<h2 style="font-style: italic; font-size: 40px; text-align: left; margin-left: 100px;">P-BOcc cuenta con un portafolio de clientes compuesto por empresas lideres en Colombia en los sectores agroindustrial (en cultivos como: palma africana, caucho, flores, reforestación), alimentación e industria en general. Estos son algunos de nuestros aliados:</h2>
-<img src="../img/cliente.png" style="width: 1341px; height: 500px;" class="paquete" alt="">
-<img src="../img/servicios.png" style="width: 1341px; height: 500px;" class="paquete" alt="">
+        <div class="ash">
+            
+            <h1 class="misty" style="font-style: italic; margin-top: 90px;"><strong>NUESTROS CLIENTES</strong></h1>
+        </div>
+         <div class="max">
+<h2 class="brock" style="font-style: italic;">P-BOcc cuenta con un portafolio de clientes compuesto por empresas lideres en Colombia en los sectores agroindustrial (en cultivos como: palma africana, caucho, flores, reforestación), alimentación e industria en general. Estos son algunos de nuestros aliados:</h2>
+</div>
+<div class="may">
+<img class="dawn" src="../img/cliente.png">
+<img class="dawn" src="../img/servicios.png">
     </div>
 </body>
 </html>
