@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de caucho</title>
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+}
+nav{
+
+background: rgb(20, 146, 230);
+height: 80px;
+width: 100%;
+}
+.enlace{
+position: absolute;
+padding: 5px 50px;
+
+}
+.logo{
+
+height: 10px;
+
+}
+nav ul{
+
+float: right;
+margin-right: 20px;
+
+}
+nav ul li{
+
+display: inline-block;
+line-height: 50px;
+margin: 0 5px;
+}
+nav ul li a{
+
+color: rgb(238, 233, 233);
+font-size: 18px;
+padding: 1px 2px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+li a.active, li a:hover{
+color: rgb(31, 255, 68);
+
+
+}
+.checkbtn{
+
+font-size: 30px;
+float: right;
+line-height: 50px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+
+display: none;
+
+
+}
+@media (max-width: 952px){
+
+.enlace{
+padding-left: 20px;
+
+}
+nav ul li a{
+font-size: 16px;
+
+}
+}
+@media (max-width: 858px){
+.checkbtn{
+display: block;
+
+}
+ul{
+position: fixed;
+width: 100%;
+height: 90vh;
+background: rgb(53, 48, 48);
+top: 80px;
+left: 100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+
+font-size: 20px;
+
+}
+li a:hover, li a.active{
+
+
+    background: none;
+    color: rgb(83, 241, 68);
+}
+#check:checked ~ ul{
+
+    left: 0;
+    position: absolute;
+}
+}
+.solgaleo{
+    font-size: 20px;
+}
+.lunala{
+margin-left: 50px;
+text-align: center;
+font-size: clamp(1rem, 5vw)
+
+}
+.yamper{
+text-align: center
+}
+.evee{
+
+
+width: 20vw;
+height: 30vw;
+
+margin-top: 17px;
+}
+.charmander{
+
+margin-left: 20px;
+margin-top: 20px;}
+.bolbasor{
+text-align: left;
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+
+.bolbasor{font-size: 20px;}
+
+}
+.chikorita{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.chikorita{font-size: 20px;}
+
+}
+.totodille{
+font-size: 3rem;
+padding: 4px;
+}
+@media screen and (max-width:700px){
+.totodille{font-size: 17px;}
+
+}
+    </style>
+</head>
+<body background="../ruana palmera/ruana.png" style="background-size: cover;background-repeat: no-repeat; background-attachment: scroll;background-position-y: 10vh;">
+
+    <header>
+        <nav>
+        <div class="logo">
+            
+            <h2 class="compañia"></h2>
+        </div>
+            
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+               </label>
+               <a href="" class="enlace">
+                <img src="../img/logo.png" alt="">
+               </a>
+               <ul>
+               <li><a href="../index.html">Quienes Somos</a></li>
+            <li><a href="../portafolio de productos.html">Portafolio de productos</a></li>
+           <li><a href="#">tienda</a></li>
+            <li><a href="../contacto.html">contacto</a></li>
+            <li><a href="../nuestros clientes/nuestros clientes.html">nuestros clientes</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="solgaleo">
+        <h1 class="lunala" style="font-style: italic; margin-top: 90px;"><strong>EMPAQUES AGRÍCOLAS</strong></h1>
+        <h1 class="lunala" style="font-style: italic; margin-top: 10px;"><strong>Kit de caucho</strong></h1>
+    </div>
+    <div class="yamper">
+<img src="../ruana palmera/hawlucha.png" class="evee" alt="">
+    </div>
+<div class="charmander">
+    <li h1 class="bolbasor" style="font-style: italic;">Canaleta integrada, hecha de aluminio.</h1></li>
+    <li h1 class="bolbasor" style="font-style: italic;">Taza recolectora de látex con gorra.</h1></li>
+    <li h1 class="bolbasor" style="font-style: italic;">Largo periodo de vida útil.</h1></li>
+    <li h1 class="bolbasor" style="font-style: italic;">Capacidad de recolección de hasta 1.5 litros de látex</h1></li>
+    <p class="chikorita" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3102575373</p>
+    <p class="chikorita" style="font-style: italic; text-align: left; margin-left: 2px; color: black;">numero de whatsapp: 3003259541</p>
+    <a class="totodille" href="mailto:jaimeospinaq@hotmail.com?subject=" style="color: rgb(16, 16, 233); text-decoration: none; margin-left: 2px;">correo electronico:jaimeospinaq@hotmail.com clic aqui</a>
+</div>
+
+
+
+
+
+
+</body>
+</html>
